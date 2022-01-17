@@ -35,6 +35,8 @@
   /*max-width: 400px;*/
   margin: 0 auto;
 }
+
+
 .nav {
   display: flex;
   
@@ -70,5 +72,17 @@
 .nav-item .nuxt-link-exact-active {
   background-color: #0280fb;
   color: #fff;
+}
+@media (max-width: 576px){
+  .nav-container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .nav-item {
+    flex-grow: 1;
+    max-width: 100%;
+    flex: 1;
+  }
+
 }
 </style>

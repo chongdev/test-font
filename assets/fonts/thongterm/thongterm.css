@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'thongterm';
+    src: url('thongterm-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'thongterm';
+    src: url('43774-webfont.woff2') format('woff2'),
+         url('43774-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+} */
+
+/* @font-face {
+    font-family: 'thongtermlight_italic';
+    src: url('43775-webfont.woff2') format('woff2'),
+         url('43775-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+} */

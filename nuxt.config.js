@@ -21,7 +21,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    "~/assets/fonts/thongterm/stylesheet.css",
+    "~/assets/fonts/thongterm/thongterm.css",
     "~/assets/css/app.scss",
   ],
 
