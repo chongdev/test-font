@@ -16,73 +16,36 @@
         </div>
       </div>
     </div>
+
+    <div class="nav-controls">
+      <div data-bn-type="text" class="css-1f2m600">English</div>
+      <i class="css-8bmaul"></i>
+      <!-- <div data-bn-type="text" class="css-1f2m600">THB</div>
+      <i class="css-8bmaul"></i> -->
+      <svg v-if="!darkMode" @click="changeMode" class="css-5dhyy8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 11.807A9.002 9.002 0 0 1 10.049 2a9.942 9.942 0 0 0-5.12 2.735c-3.905 3.905-3.905 10.237 0 14.142 3.906 3.906 10.237 3.905 14.143 0a9.946 9.946 0 0 0 2.735-5.119A9.003 9.003 0 0 1 12 11.807z"></path></svg>
+      <svg v-else @click="changeMode" class="css-5dhyy8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759 4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z"></path></svg>
+    </div>
   </div>
 </template>
 
-<style leng="scss" scopd>
-.nav-wrap {
-  background: rgba(255, 255, 255, 0.8);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-  padding: 12px;
-  position: fixed;
-  z-index: 200;
-  left: 0;
-  top: 0;
-  right: 0;
-}
-.nav-container {
-  /*max-width: 400px;*/
-  margin: 0 auto;
-}
+<script>
+  export default {
+    computed: {
+      getDarkMode() {
+        return this.$store.getters.getDarkMode;
+      }
+    },
+    data(){
+      return {
+        darkMode: false
+      }
+    },
 
-
-.nav {
-  display: flex;
-  
-  /* flex-wrap: wrap;border: 1px solid #0280fb; */
-  /* border-radius: 5px; */
-}
-.nav-item {
-   /* flex-grow: 1;
-  max-width: 100%; */
-  flex: 0 0 128px;
-}
-
-.nav-item a {
-  text-align: center;
-  display: block;
-  padding: 5px 12px;
-  text-decoration: none;
-  border: 1px solid #0280fb;
-  background-color: #fff;
-  color: #0280fb;
-  margin-left: -1px;
-}
-
-.nav-item:first-child a {
-  /* border-left: none; */
-  border-radius: 6px 0 0 6px;
-}
-
-.nav-item:last-child a {
-  border-radius: 0 6px 6px 0;
-}
-
-.nav-item .nuxt-link-exact-active {
-  background-color: #0280fb;
-  color: #fff;
-}
-@media (max-width: 576px){
-  .nav-container {
-    max-width: 400px;
-    margin: 0 auto;
+    methods: {
+      changeMode(){
+        this.darkMode = !this.darkMode;
+        this.$store.dispatch("setDarkMode", this.darkMode);
+      }
+    }
   }
-  .nav-item {
-    flex-grow: 1;
-    max-width: 100%;
-    flex: 1;
-  }
-
-}
-</style>
+</script>

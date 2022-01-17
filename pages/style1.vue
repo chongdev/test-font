@@ -1,7 +1,6 @@
 <template>
   <div>
-    <Nav />
-
+   
     <div class="body-container">
       <div class="mx-auto max-w-490">
         <div class="meta">
@@ -34,3 +33,5 @@
     </div>
   </div>
 </template>
+
+

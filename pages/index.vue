@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav />
+    
 
     <div class="body-container compare-container">
       <div class="row">
