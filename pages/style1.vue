@@ -26,6 +26,7 @@
         </div>
 
         <div class="style1">
+          <img src="https://www.cpfworldwide.com/storage/news/411888_1643342650.jpg" alt="">
           <post-header class="style1-header" />
           <post-body class="style1-body" />
         </div>

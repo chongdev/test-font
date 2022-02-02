@@ -23,6 +23,7 @@
     </div>
 
     <div class="style4">
+      <img src="https://www.cpfworldwide.com/storage/news/411888_1643342650.jpg" alt="">
       <post-header class="style3-header" />
       <post-body class="style4-body" />
     </div>
