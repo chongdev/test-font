@@ -18,6 +18,9 @@
         <div class="col">
           <Style4 />
         </div>
+        <div class="col">
+          <Style41 />
+        </div>
       </div>
     </div>
   </div>

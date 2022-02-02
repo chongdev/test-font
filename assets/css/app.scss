@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&family=IBM+Plex+Sans+Thai:wght@600&family=Sarabun:wght@300&family=Source+Sans+Pro:wght@400;600&display=swap&family=IBM+Plex+Sans+Thai+Looped&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&family=IBM+Plex+Sans+Thai:wght@600&family=Sarabun:wght@300&family=Source+Sans+Pro:wght@400;600&display=swap&family=IBM+Plex+Sans+Thai+Looped:wght@200;300&display=swap");
 
 *,
 ::after,
@@ -278,6 +278,15 @@ body {
 
 .style4 .button,
 .style4-body {
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.style4-1 .button,
+.style4-1-body {
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   font-size: 16px;
   line-height: 1.35;
