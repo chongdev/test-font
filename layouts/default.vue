@@ -12,5 +12,12 @@ export default {
       return this.$store.getters.getDarkMode;
     },
   },
+
+  data() {
+
+    return {
+
+    }
+  }
 };
 </script>

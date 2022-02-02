@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&family=IBM+Plex+Sans+Thai:wght@600&family=Sarabun:wght@300&family=Source+Sans+Pro:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&family=IBM+Plex+Sans+Thai:wght@600&family=Sarabun:wght@300&family=Source+Sans+Pro:wght@400;600&display=swap&family=IBM+Plex+Sans+Thai+Looped&display=swap");
 
 *,
 ::after,
@@ -144,8 +144,7 @@ body {
     flex-shrink: 0;
   }
 
-  
-  .body-container{
+  .body-container {
     position: fixed;
     overflow: auto;
     left: 0;
@@ -153,7 +152,6 @@ body {
     bottom: 0;
   }
 }
-
 
 .nav-wrap {
   background: rgba(255, 255, 255, 0.8);
@@ -165,6 +163,11 @@ body {
   left: 0;
   top: 0;
   right: 0;
+
+  .nav-controls a{
+    text-decoration: none;
+    color: #000;
+  }
 }
 
 .nav-controls {
@@ -172,7 +175,7 @@ body {
 }
 .nav {
   display: flex;
-  
+
   /* flex-wrap: wrap;border: 1px solid #0280fb; */
   /* border-radius: 5px; */
 }
@@ -258,11 +261,26 @@ body {
   }
 }
 
-.dark-mode{
+.dark-mode {
   background-color: #000;
   color: #fff;
 
-  .nav-wrap{
-    background-color: rgba(29,29,31,0.72);
+  .nav-wrap {
+    background-color: rgba(29, 29, 31, 0.72);
+
+    .nav-controls a{
+      color: #fff;
+    }
   }
+
+  
+}
+
+.style4 .button,
+.style4-body {
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 300;
+  font-style: normal;
 }

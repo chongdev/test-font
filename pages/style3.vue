@@ -4,7 +4,7 @@
     <div class="body-container">
       <div class="mx-auto max-w-490">
         <div class="meta">
-          <h1 class="meta-h1">Style 3</h1>
+          <h1 class="meta-h1">{{$t('Style')}} 3</h1>
           <div class="mb3">
             <div class="meta-label">Header:</div>
             <div>

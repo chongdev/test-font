@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="meta">
-      <h1 class="meta-h1">Style 1</h1>
+      <h1 class="meta-h1">{{$t('Style')}} 1</h1>
       <div class="mb3">
         <div class="meta-label">Header:</div>
         <div>
